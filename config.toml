@@ -1,0 +1,39 @@
+[discord]
+# Discord bot configuration
+command_prefix = "!"
+status_message = "Scraping AI tool coupons"
+
+[scraping]
+# Default scraping interval in minutes
+default_interval = 60
+# Maximum concurrent scraping operations
+max_concurrent = 10
+# User agent to use for HTTP requests
+user_agent = "RinKokonoe Coupon Bot/1.0"
+
+[rss]
+# RSS feed settings
+items_per_feed = 30
+# Feed refresh interval in minutes
+refresh_interval = 60
+
+[api]
+# API settings
+enable = true
+port = 8080
+# Rate limit in requests per minute
+rate_limit = 60
+
+[proxy]
+# Proxy settings (optional)
+enable = false
+# Comma-separated list of proxies
+proxies = ""
+# Rotate proxy after N requests
+rotate_after = 100
+
+[validation]
+# Coupon validation settings
+enable = true
+# Validation timeout in seconds
+timeout = 30

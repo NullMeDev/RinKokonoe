@@ -1,0 +1,44 @@
+[package]
+name = "rin_kokonoe"
+version = "0.1.0"
+edition = "2021"
+authors = ["NullMeDevNow"]
+description = "AI Tools and Dev Resources Coupon Scraper"
+
+[dependencies]
+# Async runtime
+tokio = { version = "1.28", features = ["full"] }
+
+# Web scraping
+reqwest = { version = "0.11", features = ["json"] }
+scraper = "0.17"
+
+# Discord bot
+serenity = { version = "0.11", features = ["client", "gateway", "rustls_backend", "model", "cache"] }
+
+# Database
+sqlx = { version = "0.7", features = ["runtime-tokio-rustls", "sqlite", "chrono", "json"] }
+
+# Utilities
+chrono = { version = "0.4", features = ["serde"] }
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+anyhow = "1.0"
+thiserror = "1.0"
+tracing = "0.1"
+tracing-subscriber = "0.3"
+config = "0.13"
+
+# RSS feed generation
+rss = "2.0"
+
+# HTTP server for API
+axum = "0.6"
+tower = "0.4"
+tower-http = { version = "0.4", features = ["cors", "trace"] }
+
+# Additional utilities
+regex = "1.9"
+rand = "0.8"
+lazy_static = "1.4"
+dotenv = "0.15"
