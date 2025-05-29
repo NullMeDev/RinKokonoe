@@ -25,31 +25,31 @@ if ! command -v cargo &> /dev/null; then
     exit 1
 fi
 
-echo -e "${GREEN}✓${NC} Rust is installed."
+echo -e "${GREEN}[+]${NC} Rust is installed."
 
 # Create necessary directories
 echo "Creating necessary directories..."
 mkdir -p data rss
-echo -e "${GREEN}✓${NC} Created data and rss directories."
+echo -e "${GREEN}[+]${NC} Created data and rss directories."
 
 # Copy .env.example to .env if it doesn't exist
 if [ ! -f .env ]; then
     if [ -f .env.example ]; then
         cp .env.example .env
-        echo -e "${GREEN}✓${NC} Copied .env.example to .env."
+        echo -e "${GREEN}[+]${NC} Copied .env.example to .env."
         echo -e "${YELLOW}NOTE:${NC} Please edit the .env file to configure your Discord token and other settings."
     else
         cp .env .env.example
-        echo -e "${GREEN}✓${NC} Created .env.example from your current .env."
+        echo -e "${GREEN}[+]${NC} Created .env.example from your current .env."
     fi
 else
-    echo -e "${GREEN}✓${NC} .env file already exists."
+    echo -e "${GREEN}[+]${NC} .env file already exists."
 fi
 
 # Build the project
 echo "Building the project with cargo..."
 cargo build --release
-echo -e "${GREEN}✓${NC} Project built successfully."
+echo -e "${GREEN}[+]${NC} Project built successfully."
 
 # Final instructions
 echo ""
