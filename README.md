@@ -228,17 +228,12 @@ RinKokonoe follows [Semantic Versioning](https://semver.org/). The version numbe
 - Docker support for easy deployment
 - Comprehensive documentation and setup scripts
 
-For a detailed list of all changes between versions, please see the [CHANGELOG.md](CHANGELOG.md) file.
+<p align="center">
+Contributions are welcome, either request here, or email me at null@nullme.dev! Please feel free to submit a pull request.
+</p>
+<p align="center">
+Consider donating at https://ko-fi.com/NullMeDev
+</p>
+<p align="center">
+Made With &#x1F49C by NullMeDev.</p>
 
-## 📄 License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
-
-## 🙏 Acknowledgements
-
-- Thanks to all the coupon sources that make these deals available
-- Built with Rust and various awesome crates from the Rust ecosystem
-
----
-
-Created by NullMeDevNow
